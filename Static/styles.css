@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    background: lightgray;
+    display: block;
+    z-index: 1000;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar ul {
+    display: flex;
+/*    justify-content: flex-end;*/
+}
+
+.nav-bar ul li {
+    list-style: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: darkslategrey;
+    padding: 12px 10px;
+}
+
+.nav-bar ul li a:hover {
+    background: gray;
+    padding: 12px 10px;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.right-menu {
+    float: right;
+}
+
+.right-menu img {
+    display: inline-block;
+    position: relative;
+    padding: 3px 3px;
+}
+
+.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-menu .dropdown-content {
+    position: absolute;
+    display: none;
+    background: gray;
+    color: wheat;
+    z-index: 1;
+    padding: 12px 10px;
+    margin-top: 14px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: 1.3s;
+}
+
+.dropdown-menu .dropdown-content span {
+    color: aliceblue;
+    text-transform: capitalize;
+    position: absolute;
+    display: block;
+    top: 140px;
+    left: 20px;
+}
+
+.dropdown-menu .dropdown-content span a{
+    color: floralwhite;
+    text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-content div {
+    padding: 10px;
+    margin: 2px;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.dropdown-menu .dropdown-content div label {
+    margin-right: 15px;
+}
+
+.dropdown-menu .dropdown-content div input {
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid white;
+    font-size: 16px;
+    color: wheat;
+    outline: 0;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.dropdown-menu .dropdown-content .btn {
+    background: none;
+    border: 1px solid black;
+    float: right;
+    border-radius: 10px;
+    color: wheat;
+    padding: 5px 8px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.dropdown-menu .dropdown-content .btn:hover {
+    filter: invert(1);
+    color: darkslategrey;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+    transition: 0.3s;
+}
+/*container*/
+section {
+    padding: 100px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.container .info-bx {
+    background-color: slategray;
+    padding: 12px 16px;
+    margin: 45px 16px;
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 1px 5px 0 rgba(0, 0, 0, 1.5);
+}
+
+.container .info-bx:hover {
+    background-color: darkslategray;
+    cursor: pointer;
+    box-shadow: 5px 1px 5px 0 rgba(0, 0, 0, 1.5);
+}
+
+.container .info-bx .text-bx {
+    padding-top: 5px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container .info-bx h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.details {
+    position: absolute;
+    margin: 12% auto;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+table {
+    position: absolute;
+    width: 85%;
+    margin: 15% 0 10px 0;
+    border: 1px solid darkslategray;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+.action-btn {
+    position: absolute;
+    transform: translate(870px, 510px);
+}
+
+.action-btn a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: darkslateblue;
+    color: antiquewhite;
+    border-radius: 15px;
+}
+
+.action-btn a:hover {
+    background-color: darkslategray;
+    color: whitesmoke;
+}
